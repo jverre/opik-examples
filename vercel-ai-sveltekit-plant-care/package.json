@@ -1,0 +1,37 @@
+{
+  "name": "vercel-ai-sveltekit-plant-care",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Streaming houseplant-care assistant in SvelteKit on the Vercel AI SDK, traced with Opik",
+  "scripts": {
+    "dev": "vite dev --port 4191",
+    "build": "vite build",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "setup-rule": "tsx scripts/setup-rule.ts",
+    "demo": "tsx scripts/demo.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "4.0.91",
+    "@ai-sdk/otel": "1.0.137",
+    "@ai-sdk/svelte": "5.0.137",
+    "@opentelemetry/api-logs": "0.223.0",
+    "@opentelemetry/instrumentation": "0.223.0",
+    "@opentelemetry/sdk-logs": "0.223.0",
+    "@opentelemetry/sdk-node": "0.223.0",
+    "ai": "7.0.137",
+    "dotenv": "18.0.7",
+    "opik": "2.2.96",
+    "opik-vercel": "2.2.96"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "2.70.3",
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
+    "@types/node": "^22.0.0",
+    "svelte": "5.57.2",
+    "svelte-check": "^4.0.0",
+    "tsx": "4.23.15",
+    "typescript": "^5.9.0",
+    "vite": "8.3.4"
+  }
+}

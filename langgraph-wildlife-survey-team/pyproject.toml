@@ -1,0 +1,12 @@
+[project]
+name = "langgraph-wildlife-survey-team"
+version = "0.1.0"
+description = "A planner, looping field researchers and a writer in LangGraph, traced as one deep Opik trace with cost per agent"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "langchain-core>=0.3",
+    "langchain-openai>=0.3",
+    "langgraph>=0.4",
+    "opik==2.2.96",
+    "python-dotenv>=1.0",
+]

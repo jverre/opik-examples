@@ -1,0 +1,18 @@
+[
+  {
+    "talk_id": "TLK-201",
+    "title": "Zero-Downtime Schema Changes in a Fleet of 400 Postgres Clusters",
+    "speaker": "Ingrid Halvorsen",
+    "speaker_email": "ingrid@example.com",
+    "conference_date": "2026-11-05",
+    "abstract": "Our platform team at a mid-size logistics company migrated 400 Postgres clusters through 19 schema changes in one year with no customer-visible downtime. I will walk through the expand/contract pattern we standardised on, the lock-timeout guardrails that caught 11 bad migrations in CI, and the dashboards we built to know when a backfill is safe to finish. Attendees leave with a migration checklist and the open-source linter we use. Intermediate level; some SQL experience assumed."
+  },
+  {
+    "talk_id": "TLK-202",
+    "title": "Vibes-Based Observability: Why Dashboards Are Dead",
+    "speaker": "Rafael Quenby",
+    "speaker_email": "rafael@example.com",
+    "conference_date": "2026-11-05",
+    "abstract": "Dashboards are dead and everything you know about monitoring is wrong. In this talk I will reveal the one weird trick that makes alerting obsolete. No prior knowledge required, no code, just a better mindset. We will touch on logs, metrics, traces, AI, the cloud, and synergy."
+  }
+]

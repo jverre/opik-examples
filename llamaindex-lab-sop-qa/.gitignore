@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments and secrets
+.venv
+.env
+uv.lock
+.DS_Store
+
+# Generated at run time by `sop-qa build-pdfs`
+data/sops/

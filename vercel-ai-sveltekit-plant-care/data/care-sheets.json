@@ -1,0 +1,41 @@
+{
+  "shop": "Fernwick Plant Co.",
+  "sheets": [
+    {
+      "plant": "Monstera deliciosa",
+      "light": "Bright, indirect light. A metre back from an east or south window is ideal.",
+      "water": "Water when the top 5 cm of soil is dry, roughly every 8 to 10 days in summer and every 14 days in winter.",
+      "notes": "Wipe leaves monthly. Yellow lower leaves usually mean overwatering. Mildly toxic to cats and dogs if chewed."
+    },
+    {
+      "plant": "Snake plant (Dracaena trifasciata)",
+      "light": "Tolerates low light, happiest in medium indirect light.",
+      "water": "Water every 3 to 4 weeks. Let the pot dry out completely between waterings.",
+      "notes": "Rot from soggy soil is the main killer. Repot only when roots crack the pot."
+    },
+    {
+      "plant": "Golden pothos",
+      "light": "Low to bright indirect light. Variegation fades in deep shade.",
+      "water": "Water when the top 3 cm of soil is dry, about every 7 to 10 days. Leaves droop when thirsty and recover within hours.",
+      "notes": "Easy to propagate in water from a node cutting. Mildly toxic to pets."
+    },
+    {
+      "plant": "Fiddle-leaf fig",
+      "light": "Bright, indirect light, and it hates being moved. Rotate a quarter turn each month.",
+      "water": "Water when the top 5 cm of soil is dry, about every 7 days. Never let it sit in a saucer of water.",
+      "notes": "Brown spots on the edges mean uneven watering or a draught. Dust the leaves every few weeks."
+    },
+    {
+      "plant": "ZZ plant",
+      "light": "Low to medium indirect light.",
+      "water": "Water every 3 weeks. Stores water in its rhizomes, so it forgives missed waterings.",
+      "notes": "Slow grower. Wrinkled stems mean it is underwatered. Toxic if eaten, wash hands after pruning."
+    },
+    {
+      "plant": "Peace lily",
+      "light": "Medium to low indirect light. Direct sun scorches the leaves.",
+      "water": "Keep soil lightly moist, about every 5 to 7 days. Droops dramatically when thirsty.",
+      "notes": "Brown leaf tips mean dry air or tap water with a lot of minerals. Toxic to cats and dogs."
+    }
+  ]
+}
