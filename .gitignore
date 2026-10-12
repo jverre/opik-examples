@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+uv.lock
+dist/
+*.log
+.svelte-kit/
+.next/
+target/
+build/
+# internal build docs, never published
+WORKLOG.md
+STATUS.md
+PLAN_DECISIONS.md
