@@ -1,0 +1,27 @@
+{
+  "name": "voltagent-restaurant-reservations",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A VoltAgent reservation assistant for a fictional bistro, traced to Opik over OpenTelemetry with a gen_ai.* attribute mapper so usage and cost land.",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "demo": "tsx src/demo.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "1.9.1",
+    "@opentelemetry/exporter-trace-otlp-http": "0.205.0",
+    "@opentelemetry/sdk-trace-base": "2.1.0",
+    "@voltagent/core": "2.11.0",
+    "dotenv": "17.4.2",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

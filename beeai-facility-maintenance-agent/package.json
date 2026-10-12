@@ -1,0 +1,28 @@
+{
+  "name": "beeai-facility-maintenance-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A BeeAI ReAct agent that triages facility maintenance requests for an office campus, traced to Opik through OpenInference and OTLP.",
+  "scripts": {
+    "demo": "tsx src/demo.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "1.3.24",
+    "@arizeai/openinference-instrumentation-beeai": "1.6.2",
+    "@opentelemetry/exporter-trace-otlp-http": "0.57.2",
+    "@opentelemetry/sdk-node": "0.57.2",
+    "beeai-framework": "0.1.13",
+    "dotenv": "17.2.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

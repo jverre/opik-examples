@@ -1,0 +1,11 @@
+[project]
+name = "python-sdk-manual-translation-qa"
+version = "0.1.0"
+description = "Translation quality pipeline (detect, translate, back-translate, compare, verdict) traced by hand with the low-level Opik Python client"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "openai>=1.60",
+    "opik==2.2.96",
+    "python-dotenv>=1.0",
+]

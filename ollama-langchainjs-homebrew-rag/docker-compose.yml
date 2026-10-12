@@ -1,0 +1,14 @@
+# Ollama, the only model server this example needs. No provider API, no key.
+# Models live in a named volume, so they are downloaded once and survive
+# `docker compose down` (llama3.2:1b ~1.3 GB, nomic-embed-text ~274 MB).
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-langchainjs-homebrew-rag
+    ports:
+      - "11535:11434"
+    volumes:
+      - ollama-langchainjs-homebrew-rag-models:/root/.ollama
+
+volumes:
+  ollama-langchainjs-homebrew-rag-models:

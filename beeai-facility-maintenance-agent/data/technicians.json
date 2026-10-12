@@ -1,0 +1,8 @@
+{
+  "hvac": { "name": "Ines Okafor", "team": "Climate Systems", "pager": "@ines.okafor", "on_call_hours": "06:00 to 20:00", "response_sla": "4 hours, 1 hour for no heating or cooling in occupied areas" },
+  "elevator": { "name": "Otterbeck Lifts dispatch", "team": "Vendor (Otterbeck Lifts)", "pager": "+1-555-0142", "on_call_hours": "24/7", "response_sla": "2 hours for a stuck car, next business day otherwise" },
+  "plumbing": { "name": "Bashir Tehrani", "team": "Water and Drainage", "pager": "@bashir.tehrani", "on_call_hours": "07:00 to 19:00", "response_sla": "2 hours for active leaks, 2 business days otherwise" },
+  "electrical": { "name": "Mei-Lin Castillo", "team": "Power and Lighting", "pager": "@meilin.castillo", "on_call_hours": "07:00 to 19:00", "response_sla": "4 hours, 30 minutes for sparking or burning smells" },
+  "security": { "name": "Gideon Frost", "team": "Access Control", "pager": "@gideon.frost", "on_call_hours": "24/7", "response_sla": "1 hour for doors that will not lock" },
+  "gas": { "name": "Campus Safety Desk", "team": "Safety and Emergency", "pager": "+1-555-0100", "on_call_hours": "24/7", "response_sla": "immediate: evacuate first, then call" }
+}
