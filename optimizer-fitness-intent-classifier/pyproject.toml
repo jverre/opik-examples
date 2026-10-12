@@ -1,0 +1,10 @@
+[project]
+name = "optimizer-fitness-intent-classifier"
+version = "0.1.0"
+description = "Opik Agent Optimizer rewrites a mediocre fitness-app intent classifier prompt, scored on train and held-out validation messages"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "opik-optimizer==3.2.0",
+    "opik==2.2.96",
+    "python-dotenv>=1.0",
+]

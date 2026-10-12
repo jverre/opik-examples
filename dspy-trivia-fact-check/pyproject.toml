@@ -1,0 +1,10 @@
+[project]
+name = "dspy-trivia-fact-check"
+version = "0.1.0"
+description = "A DSPy fact-checker that compiles itself a house verdict format, measured by an Opik test suite: uncompiled vs compiled on the same suite."
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "dspy==3.4.0",
+    "opik==2.2.96",
+    "python-dotenv>=1.0",
+]

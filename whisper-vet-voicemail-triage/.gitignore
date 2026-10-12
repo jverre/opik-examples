@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[oc]
+.venv
+.env
+uv.lock
+.DS_Store
+
+# Generated at run time: TTS audio + cached transcripts and triage notes.
+out/
+opik_test_suite_reports/

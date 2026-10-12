@@ -1,0 +1,109 @@
+{
+  "train": [
+    {
+      "claim": "Glimmerfen moss gets its glow from symbiotic bacteria.",
+      "verdict": "FALSE",
+      "ref": "BIO-1",
+      "key": "lumeran",
+      "ruling": "FALSE | ref: BIO-1 | The glow comes from the pigment lumeran, not from bacteria."
+    },
+    {
+      "claim": "The Great Pellam Glacier moves about two meters a year.",
+      "verdict": "UNVERIFIABLE",
+      "ref": "none",
+      "key": "",
+      "ruling": "UNVERIFIABLE | ref: none | The corpus says nothing about glacier movement."
+    },
+    {
+      "claim": "Tidewater crabs molt in March and September.",
+      "verdict": "TRUE",
+      "ref": "BIO-2",
+      "key": "march",
+      "ruling": "TRUE | ref: BIO-2 | Tidewater crabs molt once in March and once in September."
+    },
+    {
+      "claim": "Vantium is mined on the Karrow Ridge.",
+      "verdict": "UNVERIFIABLE",
+      "ref": "none",
+      "key": "",
+      "ruling": "UNVERIFIABLE | ref: none | The corpus does not say where vantium is mined."
+    },
+    {
+      "claim": "Vantium melts at a higher temperature than 640 degrees Celsius.",
+      "verdict": "FALSE",
+      "ref": "PHYS-1",
+      "key": "640",
+      "ruling": "FALSE | ref: PHYS-1 | Vantium melts at 640 degrees Celsius, not higher."
+    },
+    {
+      "claim": "Lake Orrin is the deepest lake on the Halden continent.",
+      "verdict": "TRUE",
+      "ref": "GEO-2",
+      "key": "1,100",
+      "ruling": "TRUE | ref: GEO-2 | Lake Orrin is 1,100 meters deep, the deepest lake on the continent."
+    },
+    {
+      "claim": "Brume has seven moons.",
+      "verdict": "TRUE",
+      "ref": "ASTRO-1",
+      "key": "seven",
+      "ruling": "TRUE | ref: ASTRO-1 | Tessaly is the largest of Brume's seven moons."
+    },
+    {
+      "claim": "Ferrol salt solutions turn green when it dissolves.",
+      "verdict": "FALSE",
+      "ref": "CHEM-1",
+      "key": "violet",
+      "ruling": "FALSE | ref: CHEM-1 | The solution turns violet, not green."
+    },
+    {
+      "claim": "Mirelle gel carries sound faster than air does.",
+      "verdict": "TRUE",
+      "ref": "PHYS-2",
+      "key": "air",
+      "ruling": "TRUE | ref: PHYS-2 | Sound moves through Mirelle gel about six times faster than through air."
+    }
+  ],
+  "test": [
+    {
+      "claim": "The Karrow Ridge was formed when two plates collided.",
+      "verdict": "FALSE",
+      "ref": "GEO-1"
+    },
+    {
+      "claim": "Tessaly takes 41 hours to circle Brume.",
+      "verdict": "TRUE",
+      "ref": "ASTRO-1"
+    },
+    {
+      "claim": "Saltreed grass stores salt in its leaf tips.",
+      "verdict": "TRUE",
+      "ref": "BIO-3"
+    },
+    {
+      "claim": "Quillon acid breaks down into carbon dioxide when exposed to light.",
+      "verdict": "FALSE",
+      "ref": "CHEM-2"
+    },
+    {
+      "claim": "Lake Orrin freezes over every winter.",
+      "verdict": "FALSE",
+      "ref": "GEO-2"
+    },
+    {
+      "claim": "Hail falls in the Vessa valley in winter.",
+      "verdict": "FALSE",
+      "ref": "METEO-1"
+    },
+    {
+      "claim": "The comet Wend is visible to the naked eye from Halden.",
+      "verdict": "UNVERIFIABLE",
+      "ref": "none"
+    },
+    {
+      "claim": "Tidewater crabs live for more than ten years.",
+      "verdict": "UNVERIFIABLE",
+      "ref": "none"
+    }
+  ]
+}
