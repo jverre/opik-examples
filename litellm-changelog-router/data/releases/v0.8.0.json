@@ -1,0 +1,106 @@
+{
+  "product": "Tidewater",
+  "description": "a fictional job scheduler and queue runner written in Rust",
+  "version": "v0.8.0",
+  "date": "2026-02-03",
+  "commits": [
+    {
+      "sha": "a1f3c92",
+      "type": "feat",
+      "scope": "scheduler",
+      "message": "add cron-style `every` expressions for recurring jobs",
+      "author": "maya"
+    },
+    {
+      "sha": "b72d0e1",
+      "type": "fix",
+      "scope": "queue",
+      "message": "stop retrying jobs that fail with exit code 78 (config error)",
+      "author": "oleg"
+    },
+    {
+      "sha": "c0951aa",
+      "type": "chore",
+      "scope": "deps",
+      "message": "bump tokio to 1.36",
+      "author": "bot"
+    },
+    {
+      "sha": "d4e88b3",
+      "type": "feat",
+      "scope": "cli",
+      "message": "add `tidewater ls --json` for machine-readable output",
+      "author": "maya"
+    },
+    {
+      "sha": "e19a7f0",
+      "type": "docs",
+      "scope": "readme",
+      "message": "fix typo in quickstart",
+      "author": "priya"
+    },
+    {
+      "sha": "f3b2c64",
+      "type": "fix",
+      "scope": "worker",
+      "message": "release the file lock when a worker is killed with SIGTERM",
+      "author": "oleg"
+    },
+    {
+      "sha": "0a7e5d2",
+      "type": "refactor",
+      "scope": "queue",
+      "message": "split queue.rs into submodules",
+      "author": "priya"
+    },
+    {
+      "sha": "1c4f9b8",
+      "type": "feat",
+      "scope": "api",
+      "message": "add GET /v1/jobs/{id}/logs with pagination",
+      "author": "dmitri"
+    },
+    {
+      "sha": "2d6a0c7",
+      "type": "test",
+      "scope": "queue",
+      "message": "add flaky-retry regression test",
+      "author": "oleg"
+    },
+    {
+      "sha": "3e8b1d9",
+      "type": "chore",
+      "scope": "ci",
+      "message": "cache cargo registry in CI",
+      "author": "bot"
+    },
+    {
+      "sha": "4f9c2ea",
+      "type": "fix",
+      "scope": "scheduler",
+      "message": "handle DST changes without skipping a run",
+      "author": "maya"
+    },
+    {
+      "sha": "5a0d3fb",
+      "type": "feat",
+      "scope": "worker",
+      "message": "BREAKING: rename `max_parallel` to `concurrency` in worker.toml",
+      "author": "dmitri"
+    },
+    {
+      "sha": "6b1e40c",
+      "type": "docs",
+      "scope": "migration",
+      "message": "document the `concurrency` rename",
+      "author": "dmitri"
+    },
+    {
+      "sha": "7c2f51d",
+      "type": "chore",
+      "scope": "release",
+      "message": "merge branch 'release/0.8'",
+      "author": "bot"
+    }
+  ]
+}

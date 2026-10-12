@@ -1,0 +1,120 @@
+{
+  "product": "Tidewater",
+  "description": "a fictional job scheduler and queue runner written in Rust",
+  "version": "v1.0.0",
+  "date": "2026-05-12",
+  "commits": [
+    {
+      "sha": "7c2f577",
+      "type": "feat",
+      "scope": "api",
+      "message": "stabilize the v1 REST API; remove deprecated /v0 routes",
+      "author": "dmitri"
+    },
+    {
+      "sha": "8d30688",
+      "type": "feat",
+      "scope": "scheduler",
+      "message": "add timezone support for every schedule (`tz = \"Europe/Lisbon\"`)",
+      "author": "maya"
+    },
+    {
+      "sha": "9e41799",
+      "type": "fix",
+      "scope": "worker",
+      "message": "BREAKING: workers now refuse to start without `queue_name` set",
+      "author": "oleg"
+    },
+    {
+      "sha": "af528aa",
+      "type": "feat",
+      "scope": "cli",
+      "message": "add shell completions for bash, zsh and fish",
+      "author": "priya"
+    },
+    {
+      "sha": "b0639bb",
+      "type": "perf",
+      "scope": "scheduler",
+      "message": "reduce idle CPU from 6% to under 1% by sleeping until the next due job",
+      "author": "maya"
+    },
+    {
+      "sha": "c174acc",
+      "type": "chore",
+      "scope": "deps",
+      "message": "bump axum to 0.7",
+      "author": "bot"
+    },
+    {
+      "sha": "d285bdd",
+      "type": "docs",
+      "scope": "guide",
+      "message": "write the 1.0 upgrade guide",
+      "author": "dmitri"
+    },
+    {
+      "sha": "e396cee",
+      "type": "fix",
+      "scope": "api",
+      "message": "reject job payloads over 1 MiB with 413",
+      "author": "priya"
+    },
+    {
+      "sha": "f4a7dff",
+      "type": "test",
+      "scope": "scheduler",
+      "message": "property tests for cron parsing",
+      "author": "maya"
+    },
+    {
+      "sha": "05b8e10",
+      "type": "refactor",
+      "scope": "api",
+      "message": "move auth middleware to its own crate",
+      "author": "dmitri"
+    },
+    {
+      "sha": "16c9f21",
+      "type": "chore",
+      "scope": "ci",
+      "message": "publish Docker images on tag",
+      "author": "bot"
+    },
+    {
+      "sha": "27da032",
+      "type": "fix",
+      "scope": "queue",
+      "message": "fix memory leak when a job is cancelled mid-flight",
+      "author": "oleg"
+    },
+    {
+      "sha": "38eb143",
+      "type": "feat",
+      "scope": "api",
+      "message": "add API tokens with per-queue scopes",
+      "author": "dmitri"
+    },
+    {
+      "sha": "49fc254",
+      "type": "docs",
+      "scope": "readme",
+      "message": "update screenshots",
+      "author": "priya"
+    },
+    {
+      "sha": "5a0d365",
+      "type": "chore",
+      "scope": "release",
+      "message": "merge branch 'release/1.0'",
+      "author": "bot"
+    },
+    {
+      "sha": "6b1e476",
+      "type": "fix",
+      "scope": "cli",
+      "message": "exit with code 2 (not 0) when `tidewater run` cannot reach the server",
+      "author": "priya"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[project]
+name = "litellm-changelog-router"
+version = "0.1.0"
+description = "Changelog writer that routes the same commit lists to OpenAI and Anthropic through LiteLLM, compared in Opik"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "litellm==1.105.0",
+    "opik==2.2.96",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+changelog-router = "changelog_router.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["changelog_router"]

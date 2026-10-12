@@ -1,0 +1,11 @@
+[project]
+name = "crewai-product-launch"
+version = "0.1.0"
+description = "Three-agent CrewAI crew that writes a launch plan for a fictional product, traced with Opik: one trace per kickoff, tokens and dollars per agent"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "crewai>=1.15.17",
+    "opik==2.2.96",
+    "python-dotenv>=1.2.3",
+]

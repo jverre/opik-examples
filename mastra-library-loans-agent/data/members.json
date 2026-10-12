@@ -1,0 +1,36 @@
+{
+  "members": [
+    {
+      "member_id": "M-2041",
+      "name": "Priya Nair",
+      "card_status": "active",
+      "loans": [
+        {
+          "loan_id": "L-8801",
+          "book_id": "BK-520",
+          "due_in_days": 2,
+          "renewals_used": 0
+        },
+        {
+          "loan_id": "L-8802",
+          "book_id": "BK-301",
+          "due_in_days": 1,
+          "renewals_used": 0
+        }
+      ]
+    },
+    {
+      "member_id": "M-3377",
+      "name": "Callum Hayes",
+      "card_status": "active",
+      "loans": [
+        {
+          "loan_id": "L-9120",
+          "book_id": "BK-410",
+          "due_in_days": -3,
+          "renewals_used": 2
+        }
+      ]
+    }
+  ]
+}

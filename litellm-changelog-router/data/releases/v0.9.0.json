@@ -1,0 +1,113 @@
+{
+  "product": "Tidewater",
+  "description": "a fictional job scheduler and queue runner written in Rust",
+  "version": "v0.9.0",
+  "date": "2026-03-17",
+  "commits": [
+    {
+      "sha": "8d3062e",
+      "type": "feat",
+      "scope": "api",
+      "message": "add webhook notifications on job failure",
+      "author": "dmitri"
+    },
+    {
+      "sha": "9e4173f",
+      "type": "fix",
+      "scope": "api",
+      "message": "return 404 instead of 500 for unknown job ids",
+      "author": "priya"
+    },
+    {
+      "sha": "af5284a",
+      "type": "perf",
+      "scope": "queue",
+      "message": "batch dequeue to cut Redis round trips by about 40%",
+      "author": "oleg"
+    },
+    {
+      "sha": "b06395b",
+      "type": "chore",
+      "scope": "deps",
+      "message": "bump serde to 1.0.197",
+      "author": "bot"
+    },
+    {
+      "sha": "c174a6c",
+      "type": "feat",
+      "scope": "cli",
+      "message": "add `tidewater pause` and `tidewater resume`",
+      "author": "maya"
+    },
+    {
+      "sha": "d285b7d",
+      "type": "fix",
+      "scope": "cli",
+      "message": "`tidewater ls` no longer truncates job names containing emoji",
+      "author": "priya"
+    },
+    {
+      "sha": "e396c8e",
+      "type": "test",
+      "scope": "api",
+      "message": "cover webhook retry backoff",
+      "author": "dmitri"
+    },
+    {
+      "sha": "f4a7d9f",
+      "type": "docs",
+      "scope": "api",
+      "message": "add webhook payload examples",
+      "author": "dmitri"
+    },
+    {
+      "sha": "05b8e00",
+      "type": "refactor",
+      "scope": "worker",
+      "message": "extract heartbeat loop into its own task",
+      "author": "oleg"
+    },
+    {
+      "sha": "16c9f11",
+      "type": "fix",
+      "scope": "scheduler",
+      "message": "jobs scheduled at 00:00 UTC ran twice on leap days",
+      "author": "maya"
+    },
+    {
+      "sha": "27da022",
+      "type": "chore",
+      "scope": "ci",
+      "message": "pin rust toolchain to 1.77",
+      "author": "bot"
+    },
+    {
+      "sha": "38eb133",
+      "type": "feat",
+      "scope": "worker",
+      "message": "expose per-job memory limit via `memory_mb`",
+      "author": "oleg"
+    },
+    {
+      "sha": "49fc244",
+      "type": "chore",
+      "scope": "release",
+      "message": "merge branch 'release/0.9'",
+      "author": "bot"
+    },
+    {
+      "sha": "5a0d355",
+      "type": "docs",
+      "scope": "readme",
+      "message": "add badges",
+      "author": "priya"
+    },
+    {
+      "sha": "6b1e466",
+      "type": "fix",
+      "scope": "queue",
+      "message": "dead-letter jobs after 10 failed attempts instead of looping forever",
+      "author": "oleg"
+    }
+  ]
+}

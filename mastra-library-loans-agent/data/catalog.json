@@ -1,0 +1,75 @@
+{
+  "library": "Alder Creek Public Library",
+  "books": [
+    {
+      "book_id": "BK-301",
+      "title": "The Salt Road",
+      "author": "Ines Varga",
+      "year": 2019,
+      "genre": "historical fiction",
+      "copies_total": 3,
+      "copies_available": 0,
+      "holds_waiting": 2
+    },
+    {
+      "book_id": "BK-302",
+      "title": "Night Ferry to Karsk",
+      "author": "Ines Varga",
+      "year": 2022,
+      "genre": "mystery",
+      "copies_total": 2,
+      "copies_available": 0,
+      "holds_waiting": 4
+    },
+    {
+      "book_id": "BK-410",
+      "title": "Small Gardens, Big Harvests",
+      "author": "Odile Brandt",
+      "year": 2020,
+      "genre": "gardening",
+      "copies_total": 2,
+      "copies_available": 2,
+      "holds_waiting": 0
+    },
+    {
+      "book_id": "BK-411",
+      "title": "Composting for Cold Climates",
+      "author": "Odile Brandt",
+      "year": 2017,
+      "genre": "gardening",
+      "copies_total": 1,
+      "copies_available": 0,
+      "holds_waiting": 1
+    },
+    {
+      "book_id": "BK-520",
+      "title": "A Brief History of Lighthouses",
+      "author": "Tomas Reyes",
+      "year": 2015,
+      "genre": "history",
+      "copies_total": 2,
+      "copies_available": 1,
+      "holds_waiting": 0
+    },
+    {
+      "book_id": "BK-630",
+      "title": "The Clockmaker's Apprentice",
+      "author": "Wen Liu",
+      "year": 2021,
+      "genre": "fantasy",
+      "copies_total": 4,
+      "copies_available": 2,
+      "holds_waiting": 0
+    },
+    {
+      "book_id": "BK-631",
+      "title": "Embers Under Glass",
+      "author": "Wen Liu",
+      "year": 2023,
+      "genre": "fantasy",
+      "copies_total": 3,
+      "copies_available": 0,
+      "holds_waiting": 2
+    }
+  ]
+}

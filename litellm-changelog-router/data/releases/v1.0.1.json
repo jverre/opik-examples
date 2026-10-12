@@ -1,0 +1,50 @@
+{
+  "product": "Tidewater",
+  "description": "a fictional job scheduler and queue runner written in Rust",
+  "version": "v1.0.1",
+  "date": "2026-05-20",
+  "commits": [
+    {
+      "sha": "7c2f587",
+      "type": "fix",
+      "scope": "scheduler",
+      "message": "timezone-aware jobs fired an hour late right after a DST change",
+      "author": "maya"
+    },
+    {
+      "sha": "8d30698",
+      "type": "fix",
+      "scope": "api",
+      "message": "API tokens with a scope list were rejected when the list had one entry",
+      "author": "dmitri"
+    },
+    {
+      "sha": "9e417a9",
+      "type": "docs",
+      "scope": "guide",
+      "message": "clarify that `queue_name` is now required",
+      "author": "dmitri"
+    },
+    {
+      "sha": "af528ba",
+      "type": "chore",
+      "scope": "deps",
+      "message": "bump openssl to 3.2.1 (security advisory)",
+      "author": "bot"
+    },
+    {
+      "sha": "b0639cb",
+      "type": "test",
+      "scope": "api",
+      "message": "regression test for single-scope tokens",
+      "author": "dmitri"
+    },
+    {
+      "sha": "c174adc",
+      "type": "chore",
+      "scope": "release",
+      "message": "merge branch 'release/1.0.1'",
+      "author": "bot"
+    }
+  ]
+}
