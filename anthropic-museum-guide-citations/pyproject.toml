@@ -1,0 +1,11 @@
+[project]
+name = "anthropic-museum-guide-citations"
+version = "0.1.0"
+description = "A museum guide that must quote the curator's notes verbatim, checked by an Opik test suite"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.122.0",
+    "opik==2.2.96",
+    "python-dotenv>=1.2.3",
+]

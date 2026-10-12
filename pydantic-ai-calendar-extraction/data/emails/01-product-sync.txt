@@ -1,0 +1,12 @@
+Date: Mon, 2 Nov 2026 09:12
+From: Ines Falk <ines.falk@harbourline.example>
+To: product@harbourline.example
+Subject: Product sync this week
+
+Hi all,
+
+Product sync is Wednesday 4 November, 10:00-10:45 CET, in room Fjord 2 on the
+second floor. Remote folks can join at https://meet.harbourline.example/product-sync.
+Agenda is in the wiki, please add your items before Tuesday night.
+
+Ines

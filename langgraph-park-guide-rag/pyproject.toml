@@ -1,0 +1,16 @@
+[project]
+name = "langgraph-park-guide-rag"
+version = "0.1.0"
+description = "RAG over a fictional national park visitor guide, LangGraph + Opik"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-core>=0.3",
+    "langchain-openai>=0.3",
+    "langgraph>=0.4",
+    "numpy>=1.26",
+    "opik==2.2.96",
+    "python-dotenv>=1.0",
+]
+
+[tool.setuptools]
+packages = ["park_rag"]

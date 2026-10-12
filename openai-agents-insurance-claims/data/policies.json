@@ -1,0 +1,24 @@
+{
+  "POL-7001": {
+    "holder": "Marisol Okafor",
+    "auto": {"vehicle": "2021 Hartwell Sedan", "deductible_usd": 500, "covers": ["collision", "glass", "theft", "falling_object"]},
+    "home": {"address": "14 Larkspur Lane", "deductible_usd": 1000, "covers": ["water_damage", "fire", "storm", "falling_object"]},
+    "pet": null
+  },
+  "POL-7002": {
+    "holder": "Dmitri Valcourt",
+    "auto": null,
+    "home": {"address": "88 Quarry Road", "deductible_usd": 2500, "covers": ["fire", "storm", "theft"]},
+    "pet": {"name": "Biscuit", "species": "dog", "deductible_usd": 250, "reimbursement_pct": 80,
+            "covers": ["accident", "illness", "surgery"],
+            "pre_existing": ["dental disease", "hip dysplasia"]}
+  },
+  "POL-7003": {
+    "holder": "Ines Radcliffe",
+    "auto": {"vehicle": "2019 Fennimore Hatchback", "deductible_usd": 750, "covers": ["collision", "glass", "theft"]},
+    "home": null,
+    "pet": {"name": "Pepper", "species": "cat", "deductible_usd": 100, "reimbursement_pct": 90,
+            "covers": ["accident", "illness", "surgery"],
+            "pre_existing": []}
+  }
+}

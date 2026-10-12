@@ -1,0 +1,16 @@
+Date: Mon, 16 Nov 2026 11:02
+From: Dana Whitlock <dana.whitlock@harbourline.example>
+To: planning@harbourline.example
+Subject: Q1 planning call
+
+Team,
+
+The Q1 planning call is Tuesday 17 November at 2:00 pm Eastern.
+
+Teams link: https://teams.example/l/q1-planning
+Dial-in: +1 555 010 0199, code 4471#
+
+Confirmed so far: Dana, Olu and Mei. Tobias is out that week, so we will
+send him the notes afterwards.
+
+Dana

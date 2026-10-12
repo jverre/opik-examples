@@ -1,0 +1,22 @@
+[project]
+name = "pydantic-ai-calendar-extraction"
+version = "0.1.0"
+description = "Pydantic AI agent that extracts typed CalendarEvents from messy emails, traced with Opik over OpenTelemetry and tested with an Opik test suite"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "logfire>=4.40.0",
+    "opik==2.2.96",
+    "pydantic-ai>=2.31.1",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+calendar-extraction = "calendar_extraction.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["calendar_extraction"]

@@ -1,0 +1,10 @@
+[project]
+name = "openai-agents-insurance-claims"
+version = "0.1.0"
+description = "Insurance-claims triage agent that hands off to auto, home, and pet specialists, traced with Opik"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "openai-agents>=0.22.0",
+    "opik==2.2.96",
+    "python-dotenv>=1.0.0",
+]

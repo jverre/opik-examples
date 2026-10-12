@@ -1,0 +1,13 @@
+Date: Tue, 3 Nov 2026 08:05
+From: Marek Olsen <marek.olsen@harbourline.example>
+To: design@harbourline.example
+Subject: Re: Re: Design review
+
+Sorry all, Thursday does not work after all. Moving it to Friday 6 Nov,
+11:30-12:30, same room (Atrium B). Thursday's slot is released.
+
+> On Mon, 2 Nov 2026 17:48, Wen Zhao wrote:
+> Design review Thursday 5 Nov at 2pm in Atrium B? I booked the room already.
+>
+> > On Mon, 2 Nov 2026 15:10, Marek Olsen wrote:
+> > We need to review the new onboarding flow before the freeze.

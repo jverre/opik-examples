@@ -1,0 +1,25 @@
+{
+  "name": "openai-ts-hotel-concierge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A hotel concierge chatbot on the OpenAI TypeScript SDK, traced with opik-openai: threads, cost per turn, guest feedback.",
+  "scripts": {
+    "demo": "tsx src/main.ts",
+    "dev": "tsx src/main.ts --interactive",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "openai": "^6.0.1",
+    "opik": "2.2.96",
+    "opik-openai": "2.2.96"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
