@@ -1,0 +1,12 @@
+# Local Dify state: runtime config, databases, and the generated nginx conf.
+dify-docker/.env
+dify-docker/volumes/*
+!dify-docker/volumes/sandbox/
+dify-docker/volumes/sandbox/*
+!dify-docker/volumes/sandbox/conf/
+dify-docker/nginx/conf.d/default.conf
+
+# Written by setup.sh: app id + service API key for this machine only.
+.dify-state.json
+.env
+__pycache__/

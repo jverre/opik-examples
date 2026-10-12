@@ -1,0 +1,181 @@
+{
+  "name": "Grant application screening",
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "nodes": [
+    {
+      "id": "7a1c2e10-3b4d-4f5a-8c6d-aaaa00000001",
+      "name": "Application webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "e5b0c1d2-6f7a-4b8c-9d0e-bbbb00000002",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "grant-screening",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "7a1c2e10-3b4d-4f5a-8c6d-aaaa00000003",
+      "name": "Screen application (gpt-4o-mini)",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.8,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "resource": "text",
+        "operation": "message",
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o-mini",
+          "mode": "id"
+        },
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are the first-round screener for the Lantern Arts Foundation, a small regional arts funder. Read one grant application and recommend fund, review, or decline.\n\nEligibility (all required, otherwise decline):\n- The applicant is an individual artist, collective, or registered nonprofit based in the Lantern region.\n- The project is an arts project: visual art, music, theatre, dance, literature, film, or community arts.\n- The money pays for future work. Requests to cover costs already incurred are not eligible.\n- The project is not a commercial venture, a political campaign, or a fundraiser for another organisation.\n\nScoring priorities for eligible applications:\n- Community access: free or low-cost public events, workshops, or outreach.\n- Emerging or under-served artists.\n- A budget that is specific and adds up to the amount requested.\n- A realistic timeline of 12 months or less.\n\nDecision rules:\n- fund = eligible, strong on at least two priorities, and the plan and budget are concrete.\n- review = eligible and promising, but the plan or budget is vague, or something needs a human to check.\n- decline = fails any eligibility rule, or weak on every priority.\n\nReply with a JSON object with exactly these keys: decision (\"fund\", \"review\" or \"decline\"), reason (one or two sentences that cite the specific criterion you relied on), criteria_met (an array of short strings naming the priorities the application meets, empty if none)."
+            },
+            {
+              "role": "user",
+              "content": "=Applicant: {{ $json.body.applicant }}\nProject: {{ $json.body.project_title }}\nAmount requested (USD): {{ $json.body.amount_requested }}\nSummary: {{ $json.body.summary }}\nBudget notes: {{ $json.body.budget_notes }}"
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {
+          "temperature": 0
+        }
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "__OPENAI_CREDENTIAL_ID__",
+          "name": "OpenAI (grant screening)"
+        }
+      }
+    },
+    {
+      "id": "7a1c2e10-3b4d-4f5a-8c6d-aaaa00000004",
+      "name": "Apply funding cap",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "mode": "manual",
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f1",
+              "name": "applicant",
+              "type": "string",
+              "value": "={{ $('Application webhook').item.json.body.applicant }}"
+            },
+            {
+              "id": "f2",
+              "name": "project_title",
+              "type": "string",
+              "value": "={{ $('Application webhook').item.json.body.project_title }}"
+            },
+            {
+              "id": "f3",
+              "name": "amount_requested",
+              "type": "number",
+              "value": "={{ Number($('Application webhook').item.json.body.amount_requested) }}"
+            },
+            {
+              "id": "f4",
+              "name": "model_decision",
+              "type": "string",
+              "value": "={{ $json.message.content.decision }}"
+            },
+            {
+              "id": "f5",
+              "name": "decision",
+              "type": "string",
+              "value": "={{ ($json.message.content.decision === 'fund' && Number($('Application webhook').item.json.body.amount_requested) > 15000) ? 'review' : $json.message.content.decision }}"
+            },
+            {
+              "id": "f6",
+              "name": "reason",
+              "type": "string",
+              "value": "={{ ($json.message.content.decision === 'fund' && Number($('Application webhook').item.json.body.amount_requested) > 15000) ? 'Over the 15,000 USD single-grant cap, so a program officer must sign off. Model reason: ' + $json.message.content.reason : $json.message.content.reason }}"
+            },
+            {
+              "id": "f7",
+              "name": "criteria_met",
+              "type": "string",
+              "value": "={{ ($json.message.content.criteria_met || []).join(', ') }}"
+            },
+            {
+              "id": "f8",
+              "name": "model",
+              "type": "string",
+              "value": "gpt-4o-mini"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "7a1c2e10-3b4d-4f5a-8c6d-aaaa00000005",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        660,
+        0
+      ],
+      "parameters": {
+        "respondWith": "firstIncomingItem",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Application webhook": {
+      "main": [
+        [
+          {
+            "node": "Screen application (gpt-4o-mini)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Screen application (gpt-4o-mini)": {
+      "main": [
+        [
+          {
+            "node": "Apply funding cap",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Apply funding cap": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

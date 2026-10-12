@@ -1,0 +1,26 @@
+name: n8n-grant-screening
+
+services:
+  n8n:
+    build: .
+    container_name: n8n-grant-screening
+    ports:
+      - "4280:5678"
+    environment:
+      # Opik integration: every workflow execution and node run becomes a span,
+      # shipped to Opik's OTLP endpoint. The projectName header routes the
+      # traces into the "n8n-grant-screening" project.
+      OTEL_EXPORTER_OTLP_ENDPOINT: "${OPIK_URL_OVERRIDE:-https://www.comet.com/opik/api}/v1/private/otel"
+      OTEL_EXPORTER_OTLP_HEADERS: "Authorization=${OPIK_API_KEY},Comet-Workspace=${OPIK_WORKSPACE:-default},projectName=n8n-grant-screening"
+      N8N_OTEL_SERVICE_NAME: "n8n-grant-screening"
+
+      # Plain n8n settings for a localhost demo
+      N8N_SECURE_COOKIE: "false"
+      N8N_RUNNERS_ENABLED: "true"
+      N8N_DIAGNOSTICS_ENABLED: "false"
+      N8N_PORT: "5678"
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  n8n_data:
